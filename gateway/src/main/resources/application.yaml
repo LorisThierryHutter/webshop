@@ -9,15 +9,15 @@ cloud:
         lower-case-service-id: true
       routes:
         - id: service-users
-          uri: http://localhost:8081/api
+          uri: http://localhost:8082/api
           predicates:
             - Path=/users/**
         - id: service-offers
-          uri: http://localhost:8082/api
+          uri: http://localhost:8083/api
           predicates:
             - Path=/offers/**
         - id: service-orders
-          uri: http://localhost:8083/api
+          uri: http://localhost:8084/api
           predicates:
             - Path=/orders/**
 server:
